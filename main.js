@@ -35,7 +35,7 @@
         nyuryoku.readOnly=false;
       }
 
-    if (m>=20 &&s/m>=0.8) {
+    if (m>=20 && s/m>=0.8) {
       goukaku.textContent="合格！"
     }else {
       goukaku.textContent=""
