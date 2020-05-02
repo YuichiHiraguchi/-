@@ -20,7 +20,7 @@
           let min1=Math.floor(sec/60);
           let sec1=sec-min1*60;
            　　//　　↓制限時間を変更するときはここを変える。
-          if (min1>=1) {
+          if (min1>=10000) {
             jikan.textContent="終了";
             nyuryoku.readOnly=true;
 
@@ -44,7 +44,6 @@
       if (m==1) {
         setInterval(timer,1000);
       }
-
     })
 
   btn2.addEventListener('click',()=>{
