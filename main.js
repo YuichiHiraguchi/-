@@ -19,9 +19,10 @@
          else {
           let min1=Math.floor(sec/60);
           let sec1=sec-min1*60;
+           　　//　　↓制限時間を変更するときはここを変える。
           if (min1>=1) {
             jikan.textContent="終了";
-            //nyuryoku.readOnly=true;
+            nyuryoku.readOnly=true;
 
           }else {
           jikan.textContent=min1 +"　分　"+sec1+ "　秒";
@@ -41,7 +42,7 @@
       mondaisuu.textContent="問題数："+m
       btn2.textContent="答え合わせ"
       if (m==1) {
-        setInterval(timer,100);
+        setInterval(timer,1000);
       }
 
     })
