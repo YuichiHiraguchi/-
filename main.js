@@ -5,7 +5,7 @@
   const btn2=document.getElementById('btn2');
   const kotae=document.getElementById('nyuryoku')
   const jikan=document.getElementById('jikan')
-
+  var timerID=null;
   var s=0
   var m=0
 
@@ -42,7 +42,7 @@
       mondaisuu.textContent="問題数："+m
       btn2.textContent="答え合わせ"
       if (m==1) {
-        setInterval(timer,1000);
+        timerID = setInterval(timer,1000);
       }
     })
 
@@ -63,6 +63,7 @@
 
       if (m>=20 &&s/m>=0.8) {
         goukaku.textContent="合格！"
+        clearInterval(timerID);
       }else {
         goukaku.textContent=""
       }
