@@ -61,7 +61,7 @@
           nyuryoku.readOnly=false;
         }
 
-      if (m>=20 &&s/m>=0.8) {
+      if (m>= &&s/m>=0.8) {
         goukaku.textContent="合格！"
         clearInterval(timerID);
       }else {
