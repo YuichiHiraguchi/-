@@ -51,7 +51,7 @@
         const nyuryokup=document.getElementById('nyuryoku').value;
         onclick="disabled=true";
         nyuryoku.readOnly=true
-        if (kotae.textContent==nyuryokup && nyuryokup!=="") {
+        if (kotae.textContent==nyuryokup) {
           btn2.textContent="正解";
             s=s+1;
           seikaisuu.textContent="正解数："+s
