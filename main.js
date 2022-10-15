@@ -79,7 +79,7 @@
             if (m==1) {
               timerID = setInterval(timer,1000);
             }
-        }
+        })
           
           
 
