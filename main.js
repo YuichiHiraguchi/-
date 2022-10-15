@@ -47,7 +47,7 @@
     })
 
   btn2.addEventListener('click',()=>{
-      if (btn2.textContent=="答え合わせ" && jikan.textContent!=="終了" && btn1.textcontent!=="問題スタート" ) {
+      if (btn2.textContent=="答え合わせ" && jikan.textContent!=="終了" && btn1.textContent!=="問題スタート" ) {
         const nyuryokup=document.getElementById('nyuryoku').value;
         onclick="disabled=true";
         nyuryoku.readOnly=true
