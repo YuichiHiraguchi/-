@@ -63,6 +63,25 @@
           btn2.textContent="不正解 : "+kotae.textContent;
           //nyuryoku.readOnly=false;
         }
+        
+        else(btn2.textcontent!=="答え合わせ" && jikan.textContent!=="終了") {
+          
+          let mondai=['H','He','Li','Be','B','C','N','O','F','Ne','Na','Mg','Al','Si','P','S','Cl','Ar','K','Ca','水素','ヘリウム','リチウム','ベリリウム','ホウ素','炭素','窒素','酸素','フッ素','ネオン','ナトリウム','マグネシウム','アルミニウム','ケイ素','リン','硫黄','塩素','アルゴン','カリウム','カルシウム']
+          let results=['水素','ヘリウム','リチウム','ベリリウム','ホウ素','炭素','窒素','酸素','フッ素','ネオン','ナトリウム','マグネシウム','アルミニウム','ケイ素','リン','硫黄','塩素','アルゴン','カリウム','カルシウム','H','He','Li','Be','B','C','N','O','F','Ne','Na','Mg','Al','Si','P','S','Cl','Ar','K','Ca']
+          let n = Math.floor(Math.random()*results.length);
+            nyuryoku.readOnly=false;
+            nyuryoku.value='';
+            kotae.textContent =results[n];
+            btn1.textContent=mondai[n];
+            m=m+1
+            mondaisuu.textContent="問題数："+m
+            btn2.textContent="答え合わせ"
+            if (m==1) {
+              timerID = setInterval(timer,1000);
+            }
+        }
+          
+          
 
       if (m>=20 &&s/m>=0.8) {
         goukaku.textContent="合格！"
