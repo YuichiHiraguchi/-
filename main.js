@@ -55,10 +55,13 @@
           btn2.textContent="正解";
             s=s+1;
           seikaisuu.textContent="正解数："+s
-        }else if (nyuryokup!=="") {
+        }
+        //else if (nyuryokup!=="") {
+        //  btn2.textContent="不正解 : "+kotae.textContent;
+        //}
+        else {
           btn2.textContent="不正解 : "+kotae.textContent;
-        }else {
-          nyuryoku.readOnly=false;
+          //nyuryoku.readOnly=false;
         }
 
       if (m>=20 &&s/m>=0.8) {
