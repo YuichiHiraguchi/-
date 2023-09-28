@@ -6,7 +6,7 @@
   const kotae=document.getElementById('nyuryoku')
   const jikan=document.getElementById('jikan')
   const minnyuryoku=document.getElementById('hun').focus();
-  const secnyuryoku=document.getElementById('byo').focus();
+  const secnyuryoku=document.getElementById('byo');
   var timerID=null;
   var s=0
   var m=0
