@@ -46,7 +46,7 @@
           const nyuryokup=document.getElementById('nyuryoku').value;
           onclick="disabled=true";
           nyuryoku.readOnly=true
-          document.getElementById('nyuryoku').blur();
+         // document.getElementById('nyuryoku').blur();
           if (kotae.textContent==nyuryokup) {
             btn2.textContent="正解";
               s=s+1;
