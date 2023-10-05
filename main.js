@@ -110,6 +110,7 @@
   });
 
   btn2.addEventListener('click',()=>{
+    document.getElementById('nyuryoku').blur();
     return func1();
   })
 
