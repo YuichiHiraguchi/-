@@ -111,7 +111,7 @@
   });
 
   btn2.addEventListener('click',()=>{
-    document.getElementById('nen').focus();
+    //document.getElementById('nen').focus();
     document.getElementById('nyuryoku').focus();
     return func1();
     
