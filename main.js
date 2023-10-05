@@ -19,8 +19,8 @@
 
   var func2=function(){
     if(jikan.textContent!=="終了"){
-      document.getElementById('nyuryoku').blur();
-      document.getElementById('nyuryoku').focus();
+   //   document.getElementById('nyuryoku').blur();
+   //   document.getElementById('nyuryoku').focus();
         do {
           n = Math.floor(Math.random()*results.length);
         } while (n==nn || n==nn+20 || n==nn-20);
