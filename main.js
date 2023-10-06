@@ -37,6 +37,7 @@
           hun.readOnly=true
           byo.readOnly=true
           timerID = setInterval(timer,1000);
+          document.getElementById('nyuryoku').focus();
         }
       }
   }
