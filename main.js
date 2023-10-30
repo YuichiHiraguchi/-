@@ -8,12 +8,12 @@
   const minnyuryoku=document.getElementById('hun').focus();
   const secnyuryoku=document.getElementById('byo');
   hun.addEventListener('blur', () => {
-       const br = minnyuryoku.value;
+       const br = minnyuryoku;
        const ar = hankaku2Zenkaku(br);
        minnyuryoku.value = ar;
       });
   byo.addEventListener('blur', () => {
-       const br = secnyuryoku.value;
+       const br = secnyuryoku;
        const ar = hankaku2Zenkaku(br);
        secnyuryoku.value = ar;
       });
