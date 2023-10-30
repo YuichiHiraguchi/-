@@ -71,8 +71,8 @@
     }
 
     function timer() {
-      const minnyuryoku=document.getElementById('hun').value;
-      const secnyuryoku=document.getElementById('byo').value;
+      const minnyuryoku=hankaku2zenkaku(document.getElementById('hun')).value;
+      const secnyuryoku=hankaku2zenkaku(document.getElementById('byo')).value;
       sec=sec+1;
       let min1=Math.floor(sec/60);
       let sec1=sec-min1*60;
