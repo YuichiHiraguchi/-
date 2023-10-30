@@ -7,6 +7,16 @@
   const jikan=document.getElementById('jikan')
   const minnyuryoku=document.getElementById('hun').focus();
   const secnyuryoku=document.getElementById('byo');
+  hun.addEventListener('blur', () => {
+       const br = minnyuryoku.value;
+       const ar = hankaku2Zenkaku(br);
+       minnyuryoku.value = ar;
+      });
+  byo.addEventListener('blur', () => {
+       const br = secnyuryoku.value;
+       const ar = hankaku2Zenkaku(br);
+       secnyuryoku.value = ar;
+      });
   var timerID=null;
   var s=0
   var m=0
