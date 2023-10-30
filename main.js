@@ -88,16 +88,6 @@ function hankaku2Zenkaku(str) {
     function timer() {
       const minnyuryoku=document.getElementById('hun').value;
       const secnyuryoku=document.getElementById('byo').value;
-      hun.addEventListener('blur', () => {
-       const br = minnyuryoku.value;
-       const ar = hankaku2Zenkaku(br);
-       minnyuryoku.value = ar;
-      });
-      byo.addEventListener('blur', () => {
-       const br = secnyuryoku.value;
-       const ar = hankaku2Zenkaku(br);
-       secnyuryoku.value = ar;
-      });
       
       sec=sec+1;
       let min1=Math.floor(sec/60);
