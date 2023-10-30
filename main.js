@@ -76,8 +76,8 @@ function hankaku2Zenkaku(str) {
 }
   
     function timer() {
-      const minnyuryoku=hankaku2Zenkaku(document.getElementById('hun').value);
-      const secnyuryoku=hankaku2Zenkaku(document.getElementById('byo')).value;
+      const minnyuryoku=document.getElementById('hun').value;
+      const secnyuryoku=document.getElementById('byo').value;
       sec=sec+1;
       let min1=Math.floor(sec/60);
       let sec1=sec-min1*60;
