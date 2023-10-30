@@ -121,4 +121,4 @@ function hankaku2Zenkaku(str) {
     return func1();
     
   });
-}
+};
