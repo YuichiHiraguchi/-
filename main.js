@@ -120,6 +120,5 @@ function hankaku2Zenkaku(str) {
     //document.getElementById('nyuryoku').focus();
     return func1();
     
-  })
-
+  });
 }
