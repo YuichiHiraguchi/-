@@ -10,7 +10,7 @@
   hun.addEventListener('blur', () => {
        const br = minnyuryoku;
        const ar = hankaku2Zenkaku(br);
-       document.getElementById('hun').value = ar;
+       document.getElementById('hun').value = "hhhh";
       });
   byo.addEventListener('blur', () => {
        const br = secnyuryoku;
