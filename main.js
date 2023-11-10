@@ -10,12 +10,12 @@
   hun.addEventListener('blur', () => {
        const br = minnyuryoku;
        const ar = hankaku2Zenkaku(br);
-       minnyuryoku.value = ar;
+       document.getElementById('hun').value = ar;
       });
   byo.addEventListener('blur', () => {
        const br = secnyuryoku;
        const ar = hankaku2Zenkaku(br);
-       secnyuryoku.value = ar;
+       getElementById('byo').value = ar;
       });
   var timerID=null;
   var s=0
